@@ -1,0 +1,38 @@
+/* Estilos para el video de fondo */
+#minijuegos {
+    position: relative;
+    height: 100vh; /* Ajusta el tamaño del contenedor al alto de la ventana */
+    overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+    z-index: -1; /* Envía el video detrás del contenido */
+}
+
+.content {
+    position: relative; /* Restaura la posición relativa para el contenido */
+    z-index: 1; /* Coloca el contenido sobre el video */
+    color: #fff; /* Cambia el color del texto para que sea legible sobre el video */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+.minijuegos-list {
+    position: absolute; /* Posición absoluta para superponer las listas */
+    top: 50%; /* Ubicación vertical centrada */
+    left: 50%; /* Ubicación horizontal centrada */
+    transform: translate(-50%, -50%); /* Centra las listas */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+.minijuegos-list li {
+    margin-bottom: 20px; /* Espaciado entre elementos de la lista */
+}
+
+

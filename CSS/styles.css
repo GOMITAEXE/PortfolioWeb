@@ -1,0 +1,240 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #fff; /* Cambio del color de las letras */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #95a5a6; /* Gris suave */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+/* Estilos para el contenido */
+.content {
+    padding-top: 80px; /* Ajusta el espacio para el encabezado */
+    padding-bottom: 20px; /* Espacio inferior para evitar superposición con el pie de página */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilos para las secciones */
+.section {
+    margin-top: 50px; /* Espacio entre secciones */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Estilos para la sección de proyectos */
+#projects {
+    background-color: #f9f9f900; /* Color de fondo */
+    padding: 50px 0; /* Espaciado interno */
+}
+
+/* Estilos para el contenedor del proyecto */
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para cada proyecto */
+.project {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Ancho máximo del proyecto */
+    margin: 0 auto; /* Centrado horizontal */
+    background-color: rgb(255, 255, 255); /* Color de fondo ligeramente opaco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que la imagen sobresalga del rectángulo */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para la imagen del proyecto */
+.project img {
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilos para la información del proyecto */
+.project-info {
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+}
+
+/* Estilos para el título del proyecto */
+.project-info h3 {
+    font-size: 24px; /* Tamaño del título */
+    margin-top: 0; /* Elimina el margen superior predeterminado */
+    color: #333;
+}
+
+/* Estilos para el párrafo de la descripción del proyecto */
+.project-info p {
+    line-height: 1.5; /* Altura de línea */
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-image-container {
+    text-align: center; /* Centra horizontalmente */
+}
+
+.profile-image {
+    width: 150px; /* Tamaño ajustado */
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+body {
+    background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/fondo.png');
+    background-size: cover; /* Para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos adicionales para el seleccionador de minijuegos */
+.minijuegos-container {
+    padding: 20px;
+}
+
+.minijuegos-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.minijuegos-list li {
+    background: #ffffff99;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.minijuegos-list li:hover {
+    background: #e0e0e0;
+}
+
+.minijuego-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.minijuego-description {
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para el video de fondo */
+#minijuegos {
+    position: relative;
+    height: 100vh; /* Ajusta el tamaño del contenedor al alto de la ventana */
+    overflow: hidden; /* Oculta el contenido que se desborde del contenedor */
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir todo el contenedor */
+    z-index: -1; /* Envía el video detrás del contenido */
+}
+
+.content {
+    position: relative; /* Restaura la posición relativa para el contenido */
+    z-index: 1; /* Coloca el contenido sobre el video */
+    color: #fff; /* Cambia el color del texto para que sea legible sobre el video */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+.minijuegos-list {
+    position: absolute; /* Posición absoluta para superponer las listas */
+    top: 300%; /* Ubicación vertical centrada, ajusta este valor según sea necesario */
+    left: 50%; /* Ubicación horizontal centrada */
+    transform: translate(-50%, -50%); /* Centra las listas */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+
+.minijuegos-list li {
+    margin-bottom: 20px; /* Espaciado entre elementos de la lista */
+}
